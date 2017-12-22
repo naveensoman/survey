@@ -1,0 +1,83 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Shopalyst Cuisine Survey</title>
+        <meta name="description" content="Collect the survey responses of Shopalyst Cuisine customers">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="./css/main.css"></link>
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/css/materialize.min.css">
+
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-alpha.2/js/materialize.min.js"></script>
+
+        <!-- Place favicon.ico in the root directory -->
+
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+
+        <!-- Add your site or application content here -->
+        <div id="formStuff">
+          <h2 class="header center default-text">Shopalyst Cuisine Feedback</h2>
+        <h5 class="header col s12 light row center">Please enter your feedback below</h5>
+        <div class="row">
+          <form id="survey" class="row center">
+          <label for="name">Name</label>
+          <input class="row center" id="name" name="name" type = "text">
+          <br>
+          <label for="age">DOB</label>
+          <input class="row center"id="age" name="age" type = "date">
+          <br>
+          <br>
+          <h5 class="header col s12 light row center">Rate Us from Excellent(5) to Bad(1)</h5>
+          <label for="food">Food</label>
+          <input class="row center" id="food" name="food" type = "number" min="1" max="5"><br>
+          <label for="service">Service</label>
+          <input class="row center" id="service" name="service" type = "number" min="1" max="5"><br>
+          <label for="ambience">Ambience</label>
+          <input class="row center" id="ambience" name="ambience" type = "number" min="1" max="5"><br>
+          <label for="price">Price</label>
+          <input class="row center" id="price" name="price" type = "number" min="1" max="5"><br>
+          <textarea name="Comments" id="comments" cols="30" rows="10" placeholder="Enter additional comments here"></textarea><br>
+          <input class="waves-effect waves-light btn" id="submit" type="submit">
+        </form>
+        </div>
+        </div>
+
+
+
+        <div class = "hidden row center" id="success">
+          <h1>Success!!!!</h1>
+          <h2>Your responses were</h2>
+          <h5 class="header col s12 light row center">
+          Name: <span id="resname">ResName</span><br>
+          DOB: <span id="resage">ResAge</span><br>
+          Food Rating: <span id="resfood">ResFood</span><br>
+          Service Rating: <span id="resservice">ResService</span><br>
+          Ambience Rating: <span id="resambience">ResAmbience</span><br>
+          Price Rating: <span id="resprice">ResPrice</span><br>
+          Comment: <span id="rescomment">ResComment</span>
+          </h5>
+
+        </div>
+        <script
+          src="https://code.jquery.com/jquery-3.2.1.js"
+          integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+          crossorigin="anonymous"></script>
+          <script type="text/javascript" src="./js/action.js"></script>
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+
+        <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+        <script>
+            window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+            ga('create','UA-XXXXX-Y','auto');ga('send','pageview')
+        </script>
+    </body>
+</html>
